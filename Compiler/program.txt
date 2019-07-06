@@ -1,0 +1,42 @@
+Program helloWorld
+Var p1, p2, x, i, j, k : int;
+    z, y : Array[5] int;
+    h, e : char;
+    l, f : bool;
+Begin
+k = 0;
+do 
+Begin
+write('do write', k);
+k = k + 1;
+End
+loop while ([k != 5]);
+
+write('enter bool');
+read(l);
+if (l) then
+write('text');
+else write('another text');
+
+write('enter char and int');
+read(h, z[1]);
+write(z[1], h);
+
+let p1 = 5;
+p2 = 8;
+while ([p1 < p2])
+Begin
+write(p1);
+p1 = p1 + 1;
+End
+
+x = 4;
+if([p1 == p2] and [x == 4]) then
+write('if then');
+else write('if else');
+
+if (not[x == 5]) then
+write('x != 5');
+if ([x == 5] or [x > 0]) then
+write('x > 0 or x == 5');
+End.

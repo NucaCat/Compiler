@@ -1,0 +1,8 @@
+if ((m_lexicalParser.m_identifiersToken[idenNum].identifierType == 3) || (m_lexicalParser.m_identifiersToken[idenNum].arrayType == 3)) { // bool
+				fprintf(m_code, "     xor   ax, ax \n");
+				fprintf(m_code, "     mov   al, %s[di] \n", m_lexicalParser.m_identifiersToken[idenNum].name.c_str());
+			} else
+				fprintf(m_code, "     mov   ax, %s[di] \n", m_lexicalParser.m_identifiersToken[idenNum].name.c_str());
+			fprintf(m_code, "     push  ax \n");
+
+			F -> after I
